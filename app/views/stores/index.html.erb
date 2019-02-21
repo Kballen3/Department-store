@@ -1,5 +1,6 @@
 <h1>Pick a Store To View Content</h1>
 <%= link_to 'Create a new store', new_store_path %>
+
 <ul>
   <% @stores.each do |store| %>
     <li><%= link_to store.name, store %></li>
