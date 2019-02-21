@@ -1,0 +1,6 @@
+<h1><%= @store.id ? "Edit Store" : "Create Store" %></h1>
+<%= form_for @store do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <%= f.submit %>
+<% end %>
